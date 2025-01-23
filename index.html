@@ -17,10 +17,10 @@
   <a href="#main-content" class="skip-link">Skip to Main Content</a>
   <a href="#main-nav" class="skip-link">Skip to Navigation</a>
 
-  <div class="container">
+  <div class="container" itemscope itemtype="https://schema.org/LocalBusiness">
     <!-- Header with role -->
     <header class="site-header" role="banner">
-      <h1>Jam Box Studios</h1>
+      <h1 itemprop="name">Jam Box Studios</h1>
       <nav aria-label="Main navigation" id="main-nav" role="navigation">
         <ul>
           <li><a href="#">Home</a></li>
@@ -29,7 +29,7 @@
           <li><a href="#">Studio</a></li>
         </ul>
       </nav>
-      <img src="https://picsum.photos/1200/900" class="banner" alt="A kitten banner for Jam Box Studios">
+      <img src="https://picsum.photos/1200/900" class="banner" alt="A kitten banner for Jam Box Studios" itemprop="image">
     </header>
 
     <!-- Main Content with role -->
@@ -39,20 +39,20 @@
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       
       <!-- Section with role -->
-      <section class="owner" role="region" aria-labelledby="owner-heading">
+      <section class="owner" role="region" aria-labelledby="owner-heading" itemscope itemtype="https://schema.org/Person">
         <h2 id="owner-heading">Meet the Owner</h2>
         <ul>
-          <li><strong>Name:</strong> John Doe</li>
-          <li><strong>Title:</strong> CEO</li>
-          <li><strong>Email:</strong> <a href="mailto:johnjoe@jambox.ca">johnjoe@jambox.ca</a></li>
-          <li><strong>Phone:</strong> <a href="tel:6130000000">613-000-0000</a></li>
+          <li><strong>Name:</strong> <span itemprop="name">John Doe</span></li>
+          <li><strong>Title:</strong> <span itemprop="jobTitle">CEO</span></li>
+          <li><strong>Email:</strong> <a href="mailto:johnjoe@jambox.ca" itemprop="email">johnjoe@jambox.ca</a></li>
+          <li><strong>Phone:</strong> <a href="tel:6130000000" itemprop="telephone">613-000-0000</a></li>
         </ul>
         <h2>Address</h2>
-        <address>
-          Jambox Studios<br>
-          123 Guitar Road,<br>
-          Musicville, Danceistan<br>
-          B3T 0L0
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="name">Jambox Studios</span><br>
+          <span itemprop="streetAddress">123 Guitar Road</span>,<br>
+          <span itemprop="addressLocality">Musicville</span>, <span itemprop="addressRegion">Danceistan</span><br>
+          <span itemprop="postalCode">B3T 0L0</span>
         </address>
       </section>
 
